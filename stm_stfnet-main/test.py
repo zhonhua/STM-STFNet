@@ -186,7 +186,7 @@ def train(opt, train_dates, test_dates, IMAGE_SIZE, PATCH_SIZE):
 
 
 def main():
-    # 设置随机数种子
+    # Set the random number seed
     random.seed(2021)
     np.random.seed(2021)
     torch.manual_seed(2021)
@@ -205,7 +205,7 @@ def main():
     PATCH_SIZE = opt.patch_size
     NUM_EPOCHS = opt.num_epochs
 
-    # 加载LGC数据集
+    # Load the LGC dataset
     train_dates = []
     test_dates = []
     for dir_name in os.listdir(opt.root_dir):
